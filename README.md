@@ -67,7 +67,7 @@ The API return the following error codes:
 
 ### Endpoints
 
-**GET /actors**
+**GET /actors**  
 Retrieves all actors from the database. Requieres `read:actors` permission.
 - Return a success value, a list of actor objects and the total of actors.
 ```
@@ -103,7 +103,7 @@ Retrieves all actors from the database. Requieres `read:actors` permission.
 }
 ```
 
-**GET /movies**
+**GET /movies**  
 Retrieves all movies from the database. Requieres `read:movies` permission.
 - Return a success value, a list of movie objects and the total of movies.
 ```
@@ -122,7 +122,7 @@ Retrieves all movies from the database. Requieres `read:movies` permission.
 }
 ```
 
-**DELETE /actors/{id}**
+**DELETE /actors/{id}**  
 Permantly delete an actor from the database. Requieres `delete:actors` permission.
 - Return a success value and the id of the deleted actor.
 ```
@@ -132,7 +132,7 @@ Permantly delete an actor from the database. Requieres `delete:actors` permissio
 }
 ```
 
-**DELETE /movies/{id}**
+**DELETE /movies/{id}**  
 Permantly delete a movie from the database. Requieres `delete:movies` permission.
 - Return a success value and the id of the deleted movie.
 ```
@@ -142,7 +142,7 @@ Permantly delete a movie from the database. Requieres `delete:movies` permission
 }
 ```
 
-**POST /actors**
+**POST /actors**  
 Creates an actor in the database. Requieres `create:actors` permission.
 - Return a success value and the id of the created actor.
 ```
@@ -152,7 +152,7 @@ Creates an actor in the database. Requieres `create:actors` permission.
 }
 ```
 
-**POST /movies**
+**POST /movies**  
 Creates a movie in the database. Requieres `create:movies` permission.
 - Return a success value and the id of the created movie.
 ```
@@ -162,7 +162,7 @@ Creates a movie in the database. Requieres `create:movies` permission.
 }
 ```
 
-**PATCH /actors/{id}**
+**PATCH /actors/{id}**  
 Updates an actor's information in the database. Requieres `patch:actors` permission.
 - Return a success value and the modified actor 
 ```
@@ -179,7 +179,7 @@ Updates an actor's information in the database. Requieres `patch:actors` permiss
 }
 ```
 
-**PATCH /movies/{id}**
+**PATCH /movies/{id}**  
 Updates a movie's information in the database. Requieres `patch:movies` permission.
 - Return a success value and the modified actor 
 ```
@@ -195,7 +195,7 @@ Updates a movie's information in the database. Requieres `patch:movies` permissi
 }
 ```
 
-**POST /cast**
+**POST /cast**  
 Link an actor with a movie. Requieres `patch:movies` permission.
 - Return a success value and the created cast id.
 ```
@@ -205,7 +205,7 @@ Link an actor with a movie. Requieres `patch:movies` permission.
 }
 ```
 
-**DELETE /cast/{movies_id}/{actors_id}**
+**DELETE /cast/{movies_id}/{actors_id}**  
 Deletes an Actor from a Movie cast. Requieres `patch:movies` permission.
 - Return a success value and the deleted cast id.
 ```
@@ -215,7 +215,7 @@ Deletes an Actor from a Movie cast. Requieres `patch:movies` permission.
 }
 ```
 
-**GET /actors/{id}/cast**
+**GET /actors/{id}/cast**  
 Retrieves movies done by the actor. Requieres `read:movies` permission.
 - Return a success value and the list of movie objects the actor has.
 ```
@@ -232,7 +232,7 @@ Retrieves movies done by the actor. Requieres `read:movies` permission.
 }
 ```
 
-**GET /movies/{id}/cast**
+**GET /movies/{id}/cast**  
 Retrieves actors of the movie. Requieres `read:actors` permission.
 - Return a success value and the list of actor objects that casted the movie.
 ```
@@ -251,7 +251,7 @@ Retrieves actors of the movie. Requieres `read:actors` permission.
 }
 ```
 
-**GET /movies/{id}/nocast**
+**GET /movies/{id}/nocast**  
 Retrieves actors that are not in the movie. Requieres `read:actors` permission.
 - Return a success value and the list of actor objects that didn't casted the movie.
 ```
