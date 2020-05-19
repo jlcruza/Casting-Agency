@@ -5,8 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 from sqlalchemy.sql.schema import ForeignKey
 
-user = 'jorgecruz'
-database_name = "moviecenter"
+# user = 'jorgecruz'
+# database_name = "moviecenter"
 # database_path = "postgres://{}@{}/{}".format(
 #     user, 'localhost:5432', database_name)
 
