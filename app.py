@@ -11,7 +11,6 @@ def create_app(test_config=None):
     app = Flask(__name__)
     setup_db(app)
     CORS(app, resources={r"*": {"origins": "*"}})
-    # db_drop_and_create_all()
 
     @app.after_request
     def after_request(response):
