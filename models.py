@@ -10,7 +10,7 @@ from sqlalchemy.sql.schema import ForeignKey
 # database_path = "postgres://{}@{}/{}".format(
 #     user, 'localhost:5432', database_name)
 
-database_path = "postgres://fkahhmlmwowknt:270b6bf818eea01a7a21e097a59fd2f7d791b7d5cc20b7d8d6266d0c2f8df1ae@ec2-54-86-170-8.compute-1.amazonaws.com:5432/d7ogoehrggpgo8"
+database_path = "postgres://rltmaysaktlhfi:bb1364d8983783f48581cc1dad589b587cc437b50d12eb196204f27a55dacbc1@ec2-54-211-210-149.compute-1.amazonaws.com:5432/df67o3decn2789"
 
 db = SQLAlchemy()
 
