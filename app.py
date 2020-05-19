@@ -288,7 +288,7 @@ def create_app(test_config=None):
     @requires_auth('patch:movies')
     def create_cast(jwt):
         '''
-        Link an actor with a movie
+        Link an actor with a movie.
         Requieres [patch:movies] permission.
         '''
         body = request.get_json()
@@ -459,7 +459,7 @@ def create_app(test_config=None):
         }), 404
 
     @app.errorhandler(405)
-    def bad_request(error):
+    def not_allowed(error):
         return jsonify({
             "success": False,
             "error": 405,
